@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
-/// The parameters for an auction. 
+/// The parameters for an auction.
 pub struct AuctionParameters {
     /// If there are qualifying fees, auctions occur when block_height % auction_interval == 0
     pub auction_interval: u64,

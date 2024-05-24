@@ -1,8 +1,10 @@
 [workspace]
 members = [
     "crates/sommelier-auction",
+    "crates/sommelier-auction-cache",
     "crates/sommelier-auction-order-engine",
     "crates/sommelier-auction-proto",
+    "crates/sommelier-auction-tg",
     "crates/price_feed",
     "bin/auction-bot",
 ]
@@ -15,12 +17,15 @@ edition = "2021"
 
 [workspace.dependencies]
 eyre = "0.6"
+lazy_static = "1.4"
 prost = "0.7"
 serde = { version = "1.0.196", features = ["derive"] }
 tonic = "0.4"
 price_feed = { path = "crates/price_feed" }
 sommelier-auction = { path = "crates/sommelier-auction" }
+sommelier-auction-cache = { path = "crates/sommelier-auction-cache" }
 sommelier-auction-order-engine = { path = "crates/sommelier-auction-order-engine" }
 sommelier-auction-proto = { path = "crates/sommelier-auction-proto" }
+tokio = { version = "1.37", features = ["rt-multi-thread", "macros"] }
 tracing = "0.1.37"
 tracing-subscriber = "0.3.17"

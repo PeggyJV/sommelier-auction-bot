@@ -1,15 +1,15 @@
 [package]
-name = "sommelier-auction-order-engine"
+name = "sommelier-auction-cache"
 version = "0.1.0"
-edition = "2021"
 authors.workspace = true
+edition.workspace = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 eyre.workspace = true
+lazy_static.workspace = true
 serde.workspace = true
-tracing.workspace = true
-sommelier-auction = { path = "../sommelier-auction" }
+sommelier-auction.workspace = true
+sommelier-auction-proto.workspace = true
 tokio.workspace = true
-price_feed = { path = "../price_feed" }
