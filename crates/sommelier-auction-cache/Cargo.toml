@@ -13,3 +13,4 @@ serde.workspace = true
 sommelier-auction.workspace = true
 sommelier-auction-proto.workspace = true
 tokio.workspace = true
+tracing.workspace = true

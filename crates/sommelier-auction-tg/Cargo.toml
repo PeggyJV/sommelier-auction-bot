@@ -9,9 +9,17 @@ edition.workspace = true
 [dependencies]
 clap = { version = "4.4.6", features = ["derive"] }
 confy = "0.6.1"
+eyre.workspace = true
+frankenstein = { version = "0.31.0", default-features = false, features = ["async-http-client"] }
+lazy_static.workspace = true
+ocular.workspace = true
+rusqlite = "0.31.0"
 serde.workspace = true
 serde_derive = "1.0.198"
+sommelier-auction-cache.workspace = true
+sommelier-auction-proto.workspace = true
 teloxide = { version = "0.12.2", features = ["macros"] }
-log = "0.4"
-pretty_env_logger = "0.4"
 tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+tracing.workspace = true
+tracing-subscriber.workspace = true
+url = "2.5.1"

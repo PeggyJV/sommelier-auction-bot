@@ -8,13 +8,13 @@ authors.workspace = true
 
 [dependencies]
 eyre.workspace = true
+ocular.workspace = true
 prost.workspace = true
 serde.workspace = true
 tonic.workspace = true
 
 sommelier-auction-proto = { path = "../sommelier-auction-proto" }
 lazy_static = "1.4.0"
-ocular = "1.0.0-beta-0.0.1"
 
 [dev-dependencies]
 assay = "0.1"

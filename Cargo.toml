@@ -21,6 +21,7 @@ lazy_static = "1.4"
 prost = "0.7"
 serde = { version = "1.0.196", features = ["derive"] }
 tonic = "0.4"
+ocular = "1.0.0-beta-0.0.1"
 price_feed = { path = "crates/price_feed" }
 sommelier-auction = { path = "crates/sommelier-auction" }
 sommelier-auction-cache = { path = "crates/sommelier-auction-cache" }
